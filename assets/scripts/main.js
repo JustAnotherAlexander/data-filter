@@ -19,7 +19,8 @@ lengthFilterButton.addEventListener('click', (event) => {
 });
 substringFilterButton.addEventListener('click', (event) => { 
     event.preventDefault();
-    FilterBySubstring();
+    let queryText = queryInput.value;
+    queryResult.value = FilterBySubstring(dataArr, queryText);
 });
 
 

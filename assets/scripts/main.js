@@ -7,14 +7,15 @@ import {FilterBySubstring} from './substringFilter.js';
 let lengthFilterButton = document.getElementById('lengthFilter');
 let substringFilterButton = document.getElementById('substringFilter');
 let queryInput = document.querySelector('.main__form__input');
+let queryResult = document.querySelector('.main__form__result');
 const url = './assets/data/data.json';
 let dataArr;
 
 // creating Event Listeners for buttons
 lengthFilterButton.addEventListener('click', (event) => { 
-    console.log()
     event.preventDefault();
-    FilterByLength();
+    let queryText = queryInput.value;
+    queryResult.value = FilterByLength(dataArr, queryText);
 });
 substringFilterButton.addEventListener('click', (event) => { 
     event.preventDefault();

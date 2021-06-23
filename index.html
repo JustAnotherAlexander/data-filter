@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <title>Data-filter</title>
 </head>
 <body>
     <header class="header">
-        <div class="header__themeSwitch"></div>
-        <div class="header__help"></div>
+        <div class="header__help"><span>?</span></div>
     </header>
     <section class="main">
         <form class="main__form">
             <input class="main__form__input" placeholder="Type here!">
             <div class="main__form__wrapper">
-                <button class="main__form__wrapper__button">Filter by length</button>
-                <button class="main__form__wrapper__button">Filter by substring</button>
+                <button class="main__form__wrapper__button" id="lengthFilter" onclick="">Filter by length</button>
+                <button class="main__form__wrapper__button" id="substringFilter" onclick="">Filter by substring</button>
             </div>
             <textarea class="main__form__result">Here will be the result</textarea>
         </form>

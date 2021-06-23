@@ -13,7 +13,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #49099e;
+    background-color: #cbc7ff;
 }
 
 .header {
@@ -23,43 +23,56 @@ body {
     width: 100%;
 }
 
-.header__themeSwitch {
-
+.header__help {
+    height: 50px;
+    width: 50px;
+    margin: 2.5rem 0 0 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #d9d5ff, #b7b3e6);
+    box-shadow:  5px 5px 10px #9a97c2,
+                -5px -5px 10px #fcf7ff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #676679;
 }
 
-.header__help {
-    width: 3em;
-    height: 3em;
-    background-image: url("../images/help.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+.header__help:hover {
+    background: linear-gradient(145deg, #b7b3e6, #d9d5ff);
+    box-shadow:  5px 5px 10px #9a97c2,
+                -5px -5px 10px #fcf7ff;
+    cursor: pointer;
 }
 
 .main {
     display: flex;
     justify-content: baseline;
-    height: 90vh;
+    height: 85vh;
     align-items: center;
 }
 
 .main__form {
     width: 60%;
-    height: 50%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
-    
-
 }
 
 .main__form__input {
-height: 3em;
-border-radius: 30px;
-background-color: aliceblue;
-box-shadow:     0 0 2.8rem #997eff;
-font-size: 1.5rem;
-padding-left: 1em;
+    height: 3em;
+    border: none;
+    border-radius: 50px;
+    background: #cbc7ff;
+    box-shadow: inset 11px 11px 18px #9a97c2,
+                inset -11px -11px 18px #fcf7ff;
+    font-size: 1.5rem;
+    padding-left: 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: #676679;
 }
 
 .main__form__wrapper {
@@ -71,12 +84,32 @@ padding-left: 1em;
 
 .main__form__wrapper__button {
     width: 40%;
-    border-radius: 40px;
-    background-color: #5d49a5;
+    border-radius: 50px;
+    border:none;
+    background: linear-gradient(145deg, #b7b3e6, #d9d5ff);
+    box-shadow:  11px 11px 18px #9a97c2,
+                -11px -11px 18px #fcf7ff;
     font-size: 1.5rem;
-    color: white;
+    color: #676679;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.main__result {
+.main__form__wrapper__button:hover {
+    background: #cbc7ff;
+    box-shadow: inset 5px 5px 10px #9a97c2,
+            inset -5px -5px 10px #fcf7ff;
+}
 
+.main__form__result {
+    height: 10em;
+    border: none;
+    border-radius: 50px;
+    background: #cbc7ff;
+    box-shadow: inset 11px 11px 18px #9a97c2,
+                inset -11px -11px 18px #fcf7ff;
+    padding-left: 1em;
+    padding-top: 1em;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #676679;
 }

@@ -1,0 +1,82 @@
+html {
+    box-sizing: border-box;
+    max-width:1280px;
+    margin: 0 auto;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #49099e;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 3em;
+    width: 100%;
+}
+
+.header__themeSwitch {
+
+}
+
+.header__help {
+    width: 3em;
+    height: 3em;
+    background-image: url("../images/help.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main {
+    display: flex;
+    justify-content: baseline;
+    height: 90vh;
+    align-items: center;
+}
+
+.main__form {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+
+}
+
+.main__form__input {
+height: 3em;
+border-radius: 30px;
+background-color: aliceblue;
+box-shadow:     0 0 2.8rem #997eff;
+font-size: 1.5rem;
+padding-left: 1em;
+}
+
+.main__form__wrapper {
+    height: 5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__form__wrapper__button {
+    width: 40%;
+    border-radius: 40px;
+    background-color: #5d49a5;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.main__result {
+
+}

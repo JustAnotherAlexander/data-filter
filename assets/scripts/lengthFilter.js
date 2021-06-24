@@ -5,7 +5,7 @@ export default function FilterByLength(dataArr, queryText) {
   } else {
     for (let i = 0; i < dataArr.length; i += 1) {
       if (dataArr[i].length > queryText) {
-        result += `${dataArr[i] + '\n'}`;
+        result += `${dataArr[i]}\n`;
       }
     }
   }

@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/reset.css">
-    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/glassmorphism-style.css">
     <title>Data-filter</title>
 </head>
 <body>
     <header class="header">
-        <div class="header__help"><span>?</span></div>
+        <div class="header__wrapper">
+            <span class="header__wrapper__text"> A&ne;a</span>
+        <div class="header__wrapper__switcher__bar">
+            <div class="header__wrapper__switcher"></div>
+        </div>
+        <span class="header__wrapper__text"> A=a</span>
+        </div>
     </header>
     <section class="main">
         <form class="main__form">
             <input class="main__form__input" placeholder="Type here!">
             <div class="main__form__wrapper">
-                <button class="main__form__wrapper__button" id="lengthFilter" onclick="">Filter by length</button>
-                <button class="main__form__wrapper__button" id="substringFilter" onclick="">Filter by substring</button>
+                <button class="main__form__wrapper__button" id="lengthFilter">Filter by length</button>
+                <button class="main__form__wrapper__button" id="substringFilter">Filter by substring</button>
             </div>
             <textarea class="main__form__result">Here will be the result</textarea>
         </form>

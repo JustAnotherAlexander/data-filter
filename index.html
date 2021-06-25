@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/glassmorphism-style.css">
+    <title>Data-filter</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <label class="header__wrapper__container"> A&ne;a
+                <input type="checkbox" checked="checked" class="header__wrapper__container__checkbox">
+                <span class="header__wrapper__container__checkmark"></span>
+              </label>
+        </div>
+    </header>
+    <section class="main">
+        <form class="main__form">
+            <input class="main__form__input" placeholder="Type here!">
+            <div class="main__form__wrapper">
+                <button class="main__form__wrapper__button" id="lengthFilter">Filter by length</button>
+                <button class="main__form__wrapper__button" id="substringFilter">Filter by substring</button>
+            </div>
+            <textarea class="main__form__result">Here will be the result</textarea>
+        </form>
+    </section>
+</body>
+<script type="module" src="./assets/scripts/main.js"></script>
+</html>

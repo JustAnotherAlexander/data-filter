@@ -34,10 +34,7 @@ lengthFilterButton.addEventListener('click', (event) => {
 substringFilterButton.addEventListener('click', (event) => {
   event.preventDefault();
   let queryText = queryInput.value;
-  if (lowerCaseMode) {
-    queryText = queryText.toLowerCase();
-  }
-  queryResult.value = FilterBySubstring(dataArr, queryText);
+  queryResult.value = FilterBySubstring(dataArr, queryText, lowerCaseMode);
 });
 
 async function query(data) {

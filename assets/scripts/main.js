@@ -10,7 +10,7 @@ const substringFilterButton = document.getElementById('substringFilter');
 const queryInput = document.querySelector('.main__form__input');
 const queryResult = document.querySelector('.main__form__result');
 const switcher = document.querySelector('.header__wrapper__container__checkbox');
-const url = './assets/data/data.json';
+const url = 'https://cors.bridged.cc/https://www.mrsoft.by/data.json';
 let dataArr;
 let lowerCaseMode = false;
 
@@ -34,10 +34,7 @@ lengthFilterButton.addEventListener('click', (event) => {
 substringFilterButton.addEventListener('click', (event) => {
   event.preventDefault();
   let queryText = queryInput.value;
-  if (lowerCaseMode) {
-    queryText = queryText.toLowerCase();
-  }
-  queryResult.value = FilterBySubstring(dataArr, queryText);
+  queryResult.value = FilterBySubstring(dataArr, queryText, lowerCaseMode);
 });
 
 async function query(data) {
